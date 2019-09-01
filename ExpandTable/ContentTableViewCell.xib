@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="119" id="KGk-i7-Jjw" customClass="ContentTableViewCell" customModule="ExpandTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFn-E3-Ozb" userLabel="oneView">
+                        <rect key="frame" x="42" y="0.0" width="168" height="118.5"/>
+                        <color key="backgroundColor" red="0.16506444919999999" green="0.77700666240000005" blue="0.1195328728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jO8-4x-PNK" userLabel="twoView">
+                        <rect key="frame" x="210" y="0.0" width="210" height="118.5"/>
+                        <color key="backgroundColor" red="1" green="0.81850321920000002" blue="0.078105447029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jO8-4x-PNK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DWU-pH-ypR"/>
+                    <constraint firstItem="jO8-4x-PNK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KYd-YL-8iv"/>
+                    <constraint firstItem="jO8-4x-PNK" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="SJX-Cy-3n8"/>
+                    <constraint firstItem="JFn-E3-Ozb" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="UE0-dS-M3N"/>
+                    <constraint firstItem="JFn-E3-Ozb" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="WrI-b3-ssb"/>
+                    <constraint firstItem="jO8-4x-PNK" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="gee-Iv-M4p"/>
+                    <constraint firstItem="JFn-E3-Ozb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="o4y-hV-8oy"/>
+                    <constraint firstItem="JFn-E3-Ozb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zEl-wi-5Zb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="oneView" destination="JFn-E3-Ozb" id="TY4-1E-a1U"/>
+                <outlet property="twoView" destination="jO8-4x-PNK" id="sMx-LT-Hjc"/>
+            </connections>
+            <point key="canvasLocation" x="65.217391304347828" y="142.96875"/>
+        </tableViewCell>
+    </objects>
+</document>
