@@ -45,14 +45,12 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let dataIndex = indexPath.row - 1
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "coolCell") as! CoolTableViewCell
             cell.awesomeLabel.text = tableViewData[indexPath.section].title
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "contentCell") as? ContentTableViewCell else { return UITableViewCell()}
-            //cell.textLabel?.text = tableViewData[indexPath.section].sectionData[dataIndex]
             return cell
         }
     }
@@ -68,6 +66,14 @@ class TableViewController: UITableViewController {
                 let sections = IndexSet.init(integer: indexPath.section)
                 tableView.reloadSections(sections, with: .none)
             }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 50
+        } else {
+            return 120
         }
     }
 }

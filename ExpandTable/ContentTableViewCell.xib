@@ -12,19 +12,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="119" id="KGk-i7-Jjw" customClass="ContentTableViewCell" customModule="ExpandTable" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="420" height="119"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="632" id="KGk-i7-Jjw" customClass="ContentTableViewCell" customModule="ExpandTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="805" height="632"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="420" height="118.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="805" height="631.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFn-E3-Ozb" userLabel="oneView">
-                        <rect key="frame" x="42" y="0.0" width="168" height="118.5"/>
+                        <rect key="frame" x="80.5" y="63" width="322" height="505.5"/>
                         <color key="backgroundColor" red="0.16506444919999999" green="0.77700666240000005" blue="0.1195328728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jO8-4x-PNK" userLabel="twoView">
-                        <rect key="frame" x="210" y="0.0" width="210" height="118.5"/>
+                        <rect key="frame" x="402.5" y="31.5" width="402.5" height="568.5"/>
                         <color key="backgroundColor" red="1" green="0.81850321920000002" blue="0.078105447029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </subviews>
@@ -33,8 +33,8 @@
                     <constraint firstItem="jO8-4x-PNK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KYd-YL-8iv"/>
                     <constraint firstItem="jO8-4x-PNK" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="SJX-Cy-3n8"/>
                     <constraint firstItem="JFn-E3-Ozb" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="UE0-dS-M3N"/>
-                    <constraint firstItem="JFn-E3-Ozb" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="WrI-b3-ssb"/>
-                    <constraint firstItem="jO8-4x-PNK" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="gee-Iv-M4p"/>
+                    <constraint firstItem="JFn-E3-Ozb" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="WrI-b3-ssb"/>
+                    <constraint firstItem="jO8-4x-PNK" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.9" id="gee-Iv-M4p"/>
                     <constraint firstItem="JFn-E3-Ozb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="o4y-hV-8oy"/>
                     <constraint firstItem="JFn-E3-Ozb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zEl-wi-5Zb"/>
                 </constraints>
@@ -44,7 +44,7 @@
                 <outlet property="oneView" destination="JFn-E3-Ozb" id="TY4-1E-a1U"/>
                 <outlet property="twoView" destination="jO8-4x-PNK" id="sMx-LT-Hjc"/>
             </connections>
-            <point key="canvasLocation" x="65.217391304347828" y="142.96875"/>
+            <point key="canvasLocation" x="-213.768115942029" y="314.73214285714283"/>
         </tableViewCell>
     </objects>
 </document>
